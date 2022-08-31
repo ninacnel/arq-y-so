@@ -1,0 +1,34 @@
+#!/bin/bash
+
+echo "Ejercicio 5"
+
+num=0
+
+until [ $num -eq 999 ];
+do
+	echo -n "Numero: "
+	read num
+
+	if [[ $num -ne 999 ]];
+	then
+		echo $num >> numeros.txt
+	fi
+done
+
+echo -n "Para ver los numeros ingrese S, para salir N"
+read resp
+
+if [[ $resp=="s" -o $resp=="S" ];
+then
+	echo -n "Ingrese O para Orden Original, A para orden Ascendente o D para orden Descendente"
+	read orden
+	case $orden in o|O) cat numeros.txt;;
+			a|A) cat numeros.txt | sort -n;;
+			d|D) cat numeros.txt | sort -n -r;;
+			*) echo "opción inválida";;
+	esac
+fi
+
+rm numeros.txt
+
+echo "Fin del programa..."

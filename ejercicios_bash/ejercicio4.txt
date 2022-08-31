@@ -1,0 +1,45 @@
+#!/bin/bash
+
+echo "Ejercicio 4"
+
+echo "Ingrese el nombre de un archivo"
+
+read archivo
+
+if [[ -e $archivo ]];
+then
+	if [[ -e $archivo ]];
+	then
+		echo "El archivo" $archivo "existe"
+			if [[ -d $archivo ]];
+			then
+				echo "El archivo es un directorio"
+			elif [[ -b $archivo ]];
+			then
+				echo "Es un archivo especial de bloques"
+			elif [[ -c $archivo ]];
+			then
+				echo "Es un archivo de caracteres"
+			elif [[ -f $archivo ]];
+			then
+				echo "Es un fichero"
+			elif [[ -h $archivo ]];
+			then
+				echo "Es un archivo simbólico"
+			fi
+		if [[ -r $archivo ]];
+		then
+			echo "Tiene permiso de lectura"
+		fi
+		if [[ -w $archivo ]];
+		then
+			echo "Tiene permiso de escritura"
+		fi
+		if [[ -x $archivo ]];
+		then
+			echo "Tiene permiso de ejecución"
+		fi
+	fi
+else
+	echo "El archivo no existe"
+fi

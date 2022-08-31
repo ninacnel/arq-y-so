@@ -1,0 +1,13 @@
+#!bin/bash
+
+echo "Ejercicio 2"
+
+var1=$1
+var2=$2
+var3=$3
+
+echo "El parametro" '$1' "es" $1
+
+echo "El parametro" '$2' "es" $2
+
+echo "El parametro" '$3' "es" $3

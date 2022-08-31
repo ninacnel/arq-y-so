@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "Ejercicio 3"
+
+echo "Ingrese una nota:"
+read nota
+
+if [[ $nota -lt 4 && $nota -gt 0 ]];
+then
+	echo "Condición Libre"
+elif [[ $nota -lt 6 && $nota -ge 4 ]];
+then
+	echo "Condición Regular"
+elif [[ $nota -ge 6 && $nota -le 10 ]];
+then
+	echo "Condición Promoción Directa"
+else
+	echo "Nota inválida"
+fi
