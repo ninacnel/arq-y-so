@@ -1,0 +1,4 @@
+Ejercicio 1
+
+# docker pull nginx
+# docker run nginx

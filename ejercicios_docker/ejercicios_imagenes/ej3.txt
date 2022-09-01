@@ -1,0 +1,9 @@
+Ejercicio 3
+
+# docker run -d nginx
+# docker rmi nginx
+# Error
+
+-No nos permite eliminar la imagen porque está siendo utilizada por el contenedor que acabamos de levantar
+-Es necesario que primero detengamos el contenedor y luego lo eliminemos
+-Una vez hecho esto, ya vamos a poder eliminar la imagen sin problemas

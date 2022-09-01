@@ -1,0 +1,5 @@
+Ejercicio 5
+
+# docker run -d nginx
+# docker exec -it id_contenedor bash
+# ls

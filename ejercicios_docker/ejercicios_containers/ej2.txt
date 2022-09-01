@@ -1,0 +1,6 @@
+Ejercicio 2
+
+# docker run -d nginx
+# docker ps
+# docker stop id_contenedor
+# docker rm id_contenedor

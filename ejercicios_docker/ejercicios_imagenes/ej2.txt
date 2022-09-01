@@ -1,0 +1,3 @@
+Ejercicio 2
+
+# docker rmi nombre_imagen
