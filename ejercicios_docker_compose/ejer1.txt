@@ -1,0 +1,17 @@
+# vim docker-compose.yml
+
+version: "3"
+services:
+      web:
+         container_name: nginx-facu
+         image: nginx
+         ports:
+           		- "90:80"
+         restart: always
+
+      mysql:
+        container_name: mysql-facu
+        image: mysql
+        ports:
+        		- "91:80"
+

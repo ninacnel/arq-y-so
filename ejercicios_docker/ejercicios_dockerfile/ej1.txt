@@ -1,3 +1,14 @@
 Ejercicio 1
 
-# 
+# vim Dockerfile
+
+(dentro del dockerfile)
+	FROM: nginx
+	WORKDIR: /usr/share/nginx/html
+	COPY: index.html .
+
+(guardamos y salimos del dockerfile ctrl+d)
+
+# docker build -t nginx_web:v1 .
+
+# docker run -d -p 90:80 nginx_web:v1

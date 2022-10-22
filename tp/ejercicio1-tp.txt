@@ -1,0 +1,7 @@
+FROM ubuntu:20.04
+USER root
+RUN apt-get install curl
+RUN apt-get install telnet
+RUN apt-get install nginx
+?WORKDIR /usr/nignx/share/html?
+COPY index.html .

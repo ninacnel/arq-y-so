@@ -1,1 +1,6 @@
 Ejercicio 6
+
+# docker run -d -p 90:80 nginx
+
+(desde donde tengamos el documento html)
+# docker cp index.html idContenedor:/usr/share/nginx/html 

@@ -1,0 +1,16 @@
+# vim docker-compose.yml
+
+version: "3"
+services:
+	service1:
+		container_name: nginx-servicio
+		image: nginx
+		ports:
+				- "80:80"
+		restart: always
+
+	service2:
+		container_name: mysql-container
+		image: mysql
+		ports:
+				- "90:90"

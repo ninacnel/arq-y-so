@@ -1,0 +1,7 @@
+(creando un docker volume)
+version: "3"
+	volume: "$PWD/web:/usr/share/nginx/html"
+	ports:
+			-"90:80"
+volumes:
+	volumen-web1:

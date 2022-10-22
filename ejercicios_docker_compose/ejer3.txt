@@ -1,0 +1,15 @@
+En el caso de que creemos otro archivo con un nombre diferente a "docker-compose.yml"
+Por ejemplo,
+
+# vim a.yml
+# vim b.yml
+
+
+Para luego poder ejecutarlo debemos usar "-f" seguido del nombre del archivo 
+
+# docker-compose -f a.yml -f b.yml up -d
+
+
+Por último, para stoppearlos todos se usa el comando
+
+# docker-compose down

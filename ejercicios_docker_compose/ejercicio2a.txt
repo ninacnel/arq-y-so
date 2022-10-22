@@ -1,0 +1,14 @@
+(parados en la misma carpeta que el Dockerfile se usa "build: .")
+
+# vim docker-compose.yml
+
+version: "3"
+services:
+	service1:
+		container_name: "nginx-servicio"
+		build: .
+		ports:
+				- "80:80"
+		restart: always
+
+# docker-compose up -d

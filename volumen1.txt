@@ -1,0 +1,13 @@
+(primero crear la carpeta donde voy a tener el html)
+
+# mkdir web
+# cd web
+# vim index.html
+
+(despues dentro del docker-compose agregar "volume" con las rutas correspondientes para vincularlo)
+
+# version: "3"
+# 		volume:
+			- "$PWD/web:/usr/share/nginx/html"
+		ports:
+				-"90:80"

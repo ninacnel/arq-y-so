@@ -1,0 +1,11 @@
+version: "3"
+services:
+	nginx:
+		build: #suponiendo q está parado en el mismo lugar q el docker 
+			context: rutadelDocker
+			dockerfile: dockerfile 
+		container_name: web_nginx
+		ports:
+			-"90:90"
+		restart: "always"
+		volumes:

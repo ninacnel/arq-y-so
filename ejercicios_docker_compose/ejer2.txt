@@ -1,0 +1,21 @@
+a) Parados en la misma carpeta que el Dockerfile se usa "build: ."
+
+version: "3"
+services:
+	web:
+		container_name: nginx-servicio
+            build: .
+		restart: always
+
+b) Si el Dockerfile está en otra carpeta hay que poner dentro del "build:"
+un "context: rutaDelDockerfile"
+y "dockerfile: nombreDockerfile" previamente creado) 
+
+version: "3"
+services:
+	web:
+		container_name: nginx
+            build: 
+			context: /home/USER/Desktop/arq-y-so
+			dockerfile: Dockerfile
+		restart: always
