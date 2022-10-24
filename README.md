@@ -21,9 +21,9 @@ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg \ ls
 5)	sudo apt-get update
 6)	sudo apt-get install docker-ce docker-ce-cli containerd.io
 7)	Finally, to check that you have Docker installed:
-sudo docker run hello-world
+```sudo docker run hello-world```
 8)	Now to install DOCKER-COMPOSE you have to open the terminal again and run the next commands:
-sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+`sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose`
 9)	To give permissions:
 `sudo chmod +x /usr/local/bin/docker-compose`
 10)	And again, to check the installation run the command, it will display the version you’ll work with:
