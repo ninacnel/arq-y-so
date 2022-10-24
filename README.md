@@ -11,17 +11,17 @@ Here’s a guide to install the operating system https://brb.nci.nih.gov/seqtool
 ## INSTALL DOCKER and DOCKER-COMPOSE
 You have to follow these steps (when Y/N is asked, always introduce ‘Y’ and press enter):
 1)	Once you start Ubuntu, open the terminal and execute this command:
-sudo apt-get update
+`sudo apt-get update`
 2)	Then this command to configure a repository for the installation: 
-sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg \ lsb-release
-3)	curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor –o /usr/share/keyrings/docker-archive-keyring.gpg
-4)	echo \
-(press enter) "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
-(press enter) intro$(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-5)	sudo apt-get update
-6)	sudo apt-get install docker-ce docker-ce-cli containerd.io
+`sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg \ lsb-release`
+3)	`curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor –o /usr/share/keyrings/docker-archive-keyring.gpg`
+4)	`echo \`
+(press enter) `"deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \`
+(press enter) `intro$(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null`
+5)	`sudo apt-get update`
+6)	`sudo apt-get install docker-ce docker-ce-cli containerd.io`
 7)	Finally, to check that you have Docker installed:
-```sudo docker run hello-world```
+`sudo docker run hello-world`
 8)	Now to install DOCKER-COMPOSE you have to open the terminal again and run the next commands:
 `sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose`
 9)	To give permissions:
