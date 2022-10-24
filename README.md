@@ -3,12 +3,12 @@ Let’s give you a quick introduction to the teamwork: Facundo Quevedo, Santino 
 Before to start working with the project, you have to be sure to accomplish the following requirements:
 -	Have Ubuntu or Linux as operating system or a virtual machine to run any of those OS.
 -	Have Docker and Docker-compose installed
-# INSTALL VIRTUAL BOX (for Windows users)
+## INSTALL VIRTUAL BOX (for Windows users)
 We leave the following link to a guide https://www.geeksforgeeks.org/how-to-install-virtualbox-on-windows/ 
 Once you have the virtual machine, you will need to install Ubuntu 20.04
-# INSTALL UBUNTU
+## INSTALL UBUNTU
 Here’s a guide to install the operating system https://brb.nci.nih.gov/seqtools/installUbuntu.html 
-# INSTALL DOCKER and DOCKER-COMPOSE
+## INSTALL DOCKER and DOCKER-COMPOSE
 You have to follow these steps (when Y/N is asked, always introduce ‘Y’ and press enter):
 1)	Once you start Ubuntu, open the terminal and execute this command:
 sudo apt-get update
@@ -27,4 +27,6 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-
 9)	To give permissions:
 sudo chmod +x /usr/local/bin/docker-compose
 10)	And again, to check the installation run the command, it will display the version you’ll work with:
+'''
 docker-compose --version
+'''
