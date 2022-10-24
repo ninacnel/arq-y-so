@@ -30,3 +30,4 @@ You have to follow these steps (when Y/N is asked, always introduce ‘Y’ and 
 `sudo chmod +x /usr/local/bin/docker-compose`
 10)	And again, to check the installation run the command, it will display the version you’ll work with:
 `docker-compose --version`
+ ### Now you will be able to work with the project on your on PC!
