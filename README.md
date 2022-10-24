@@ -15,7 +15,7 @@ You have to follow these steps (when Y/N is asked, always introduce ‘Y’ and 
 2)	Then this command to configure a repository for the installation: 
 `sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg \ lsb-release`
 3)	`curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor –o /usr/share/keyrings/docker-archive-keyring.gpg`
-4)	`echo \
+4)	`echo \`
 5)	Press enter
 `"deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \`
 6) Then press enter again
