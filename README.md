@@ -27,6 +27,4 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-
 9)	To give permissions:
 sudo chmod +x /usr/local/bin/docker-compose
 10)	And again, to check the installation run the command, it will display the version you’ll work with:
-'''
-docker-compose --version
-'''
+'docker-compose --version'
