@@ -25,6 +25,6 @@ sudo docker run hello-world
 8)	Now to install DOCKER-COMPOSE you have to open the terminal again and run the next commands:
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 9)	To give permissions:
-sudo chmod +x /usr/local/bin/docker-compose
+`sudo chmod +x /usr/local/bin/docker-compose`
 10)	And again, to check the installation run the command, it will display the version you’ll work with:
-'docker-compose --version'
+`docker-compose --version`
